@@ -1,14 +1,14 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import WebSocketComponent from './Components/WebSocketComponent'
-import './App.css'
+import { useState } from "react";
+import reactLogo from "./assets/react.svg";
+import viteLogo from "/vite.svg";
+import WebSocketComponent from "./Components/WebSocketComponent";
+import "./App.css";
 
 //wss://ws-feed-public.sandbox.exchange.coinbase.com
-//malformed JSON ^^ 
+//malformed JSON ^^
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
 
   return (
     <>
@@ -33,10 +33,10 @@ function App() {
         Click on the Vite and React logos to learn more
       </p>
       <div>
-      <WebSocketComponent url="wss://ws.postman-echo.com/raw"/>
+        <WebSocketComponent url="wss://ws.postman-echo.com/raw" />
       </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
