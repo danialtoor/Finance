@@ -4,6 +4,9 @@ import viteLogo from '/vite.svg'
 import WebSocketComponent from './Components/WebSocketComponent'
 import './App.css'
 
+//wss://ws-feed-public.sandbox.exchange.coinbase.com
+//malformed JSON ^^ 
+
 function App() {
   const [count, setCount] = useState(0)
 
