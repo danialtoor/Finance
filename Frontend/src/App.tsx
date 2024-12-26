@@ -33,7 +33,7 @@ function App() {
         Click on the Vite and React logos to learn more
       </p>
       <div>
-        <WebSocketComponent url="wss://ws.postman-echo.com/raw" />
+        <WebSocketComponent url="wss://ws-feed.exchange.coinbase.com" />
       </div>
     </>
   );

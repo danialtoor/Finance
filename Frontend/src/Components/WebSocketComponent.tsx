@@ -8,7 +8,14 @@ const WebSocketComponent = ({ url }: { url: string }) => {
 
     socket.onopen = () => {
       console.log("WebSocket connected");
-      socket.send("Hello Server!");
+      // socket.send("Hello Server!");
+
+      socket.send(
+        JSON.stringify({
+          type: "subscribe",
+          channels: [{ name: "ticker", product_ids: ["BTC-USD"] }],
+        })
+      );
     };
 
     socket.onmessage = (event) => {
