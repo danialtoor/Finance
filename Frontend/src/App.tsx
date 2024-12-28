@@ -5,16 +5,13 @@ import WebSocketComponent from "./Components/WebSocketComponent";
 import WebApiComponent from "./Components/WebApiComponent";
 import "./App.css";
 
-//wss://ws-feed-public.sandbox.exchange.coinbase.com
-//malformed JSON ^^
-
 function App() {
   const [count, setCount] = useState(0);
 
   const [endpoint, setEndpoint] = useState<string>("");
 
   const handleFetch = () => {
-    setEndpoint("https://jsonplaceholder.typicode.com/posts"); // Example endpoint
+    setEndpoint("https://jsonplaceholder.typicode.com/posts");
   };
 
   return (

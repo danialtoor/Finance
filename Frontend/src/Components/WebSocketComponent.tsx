@@ -8,7 +8,6 @@ const WebSocketComponent = ({ url }: { url: string }) => {
 
     socket.onopen = () => {
       console.log("WebSocket connected");
-      // socket.send("Hello Server!");
 
       socket.send(
         JSON.stringify({
